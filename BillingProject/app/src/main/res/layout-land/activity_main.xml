@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Billing Project" />
+
+    <EditText
+        android:id="@+id/editTextID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text="ID"
+        android:layout_gravity="right|center_horizontal"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Name"
+        android:layout_gravity="right|center_horizontal"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="60dp"
+        />
+
+    <EditText
+        android:id="@+id/editTextProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Product"
+        android:layout_gravity="right|center_horizontal"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="100dp"
+        />
+
+    <EditText
+        android:id="@+id/editTextPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Price"
+        android:layout_gravity="right|center_horizontal"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="140dp"
+        />
+
+    <EditText
+        android:id="@+id/editTextQty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Quantity"
+        android:layout_gravity="right|center_horizontal"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="180dp"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Total Billing"
+        android:layout_gravity="left|center_horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:id="@+id/textViewBill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center_horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="100dp"/>
+
+    <Button
+        android:id="@+id/inputBillButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Input Billing"
+        android:layout_gravity="left|center_horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="150dp"/>
+
+    <Button
+        android:id="@+id/recordBillButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Record Billing"
+        android:layout_gravity="left|center_horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="200dp"/>
+
+    <Button
+        android:id="@+id/prevButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="prev"
+        android:layout_gravity="left|center_horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="250dp"/>
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="next"
+        android:layout_gravity="left|center_horizontal"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="250dp"/>
+
+</FrameLayout>
