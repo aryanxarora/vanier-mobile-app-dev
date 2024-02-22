@@ -5,7 +5,7 @@ public class Course {
     private String course_no;
     private String course_name;
     private int max_enrl;
-    private static int credits;
+    private static int credits = 3;
 
     public Course() {
     }
