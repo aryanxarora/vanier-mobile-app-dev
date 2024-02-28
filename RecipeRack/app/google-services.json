@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "462153824746",
+    "project_id": "reciperack-1e6c2",
+    "storage_bucket": "reciperack-1e6c2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:462153824746:android:a24cf0fa2bd632c8679a93",
+        "android_client_info": {
+          "package_name": "ca.vanier.reciperack"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJHr17v2l4pYkNWo2nG19S67N-p_OVIMU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
