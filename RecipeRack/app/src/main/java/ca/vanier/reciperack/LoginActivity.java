@@ -27,21 +27,22 @@ public class LoginActivity extends AppCompatActivity {
         email = findViewById(R.id.editTextLoginEmail);
         password = findViewById(R.id.editTextLoginPassword);
         login = findViewById(R.id.buttonLoginSubmit);
-
         login.setOnClickListener(view -> loginUser());
 
     }
 
     public void loginUser(){
-        String loginEmail = email.getText().toString();
-        String loginPassword = password.getText().toString();
+//        String loginEmail = email.getText().toString();
+//        String loginPassword = password.getText().toString();
+        String loginEmail = "aryanxarora@gmail.com";
+        String loginPassword = "Aryanarora11";
         mAuth.signInWithEmailAndPassword(loginEmail, loginPassword).addOnCompleteListener(this, task -> {
             if (task.isSuccessful()){
                 Log.d("AUTH", "createUserWithEmail:success");
                 FirebaseUser user = mAuth.getCurrentUser();
                 Intent appIntent = new Intent(this, AppActivity.class);
                 assert user != null;
-                appIntent.putExtra("userEmailIntent", user.getEmail());
+                appIntent.putExtra("userIdIntent", user.getUid());
                 startActivity(appIntent);
             } else {
                 Log.w("AUTH", "createUserWithEmail:failure", task.getException());

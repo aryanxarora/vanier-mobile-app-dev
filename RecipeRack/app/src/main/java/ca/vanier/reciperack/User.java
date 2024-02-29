@@ -1,38 +1,30 @@
 package ca.vanier.reciperack;
 
+import java.util.List;
+
 public class User {
 
-    private String name;
-    private String email;
-    private String password;
+    private String uid;
+    private List<Recipe> recipes;
 
-    public User(String name, String email, String password) {
-        this.name = name;
-        this.email = email;
-        this.password = password;
+    public User(String uid, List<Recipe> recipes) {
+        this.uid = uid;
+        this.recipes = recipes;
     }
 
-    public String getName() {
-        return name;
+    public String getUid() {
+        return uid;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setUid(String uid) {
+        this.uid = uid;
     }
 
-    public String getEmail() {
-        return email;
+    public List<Recipe> getRecipes() {
+        return recipes;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
+    public void setRecipes(List<Recipe> recipes) {
+        this.recipes = recipes;
     }
 }

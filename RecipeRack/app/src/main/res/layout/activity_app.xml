@@ -35,9 +35,32 @@
         android:id="@+id/displayUserEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="82dp"
+        android:layout_marginStart="83dp"
         android:layout_marginTop="4dp"
         android:text="aryanxarora@gmail.com"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <ImageButton
+        android:id="@+id/categoryButton"
+        android:layout_width="148dp"
+        android:layout_height="148dp"
+        android:layout_marginTop="108dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_channel_foreground" />
+
+    <ImageButton
+        android:id="@+id/searchButton"
+        android:layout_width="148dp"
+        android:layout_height="148dp"
+        android:layout_marginTop="108dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.707"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/search_foreground" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

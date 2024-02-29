@@ -12,7 +12,7 @@ import com.google.firebase.auth.*;
 
 public class RegisterActivity extends AppCompatActivity {
 
-    EditText email, password;
+    EditText name, email, password;
     Button register;
     private FirebaseAuth mAuth;
     @Override
@@ -21,6 +21,7 @@ public class RegisterActivity extends AppCompatActivity {
         setContentView(R.layout.activity_register);
 
         mAuth = FirebaseAuth.getInstance();
+        name = findViewById(R.id.editTextUserName);
         email = findViewById(R.id.editTextRegisterEmail);
         password = findViewById(R.id.editTextRegisterPassword);
         register = findViewById(R.id.buttonRegisterSubmit);
@@ -39,7 +40,8 @@ public class RegisterActivity extends AppCompatActivity {
                 FirebaseUser user = mAuth.getCurrentUser();
                 Intent appIntent = new Intent(this, AppActivity.class);
                 assert user != null;
-                appIntent.putExtra("userEmailIntent", user.getEmail());
+                appIntent.putExtra("userIdIntent", user.getUid());
+                appIntent.putExtra("userNameIntent", name.getText().toString());
                 startActivity(appIntent);
             } else {
                 Log.w("AUTH", "createUserWithEmail:failure", task.getException());
