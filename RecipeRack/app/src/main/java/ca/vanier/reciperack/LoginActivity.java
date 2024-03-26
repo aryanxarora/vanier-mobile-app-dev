@@ -29,6 +29,8 @@ public class LoginActivity extends AppCompatActivity {
         login = findViewById(R.id.buttonLoginSubmit);
         login.setOnClickListener(view -> loginUser());
 
+        loginUser();
+
     }
 
     public void loginUser(){

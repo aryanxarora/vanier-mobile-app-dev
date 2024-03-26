@@ -1,8 +1,9 @@
 package ca.vanier.reciperack;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class User {
+public class User implements Serializable {
 
     private String uid;
     private List<Recipe> recipes;

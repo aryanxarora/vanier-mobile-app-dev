@@ -31,7 +31,6 @@ public class FirestoreHelper {
                         Log.d("DATA", "Document Snapshot data: " + document.getData());
                     } else {
                         Log.d("DATA", "No document exists");
-                        insertNewUser(uid);
                     }
                 } else {
                     Log.d("DATA", "Failed to get data ", task.getException());
@@ -40,20 +39,27 @@ public class FirestoreHelper {
         });
     }
 
-    public static void insertNewUser(String uid){
-        Recipe sample = new Recipe("Chocolate Cake", "Dessert", new String[]{"Butter", "Flour", "Cocoa Power", "Sugar"}, "Mix it all up and bake");
+    public static void insertNewUser(String uid, String name){
+//        Recipe sample = new Recipe("Chocolate Cake", "Dessert", new String[]{"Butter", "Flour", "Cocoa Power", "Sugar"}, "Mix it all up and bake");
 //        User user = new User(uid, new List<User>(uid, sample));
-        Map<String, Object> userMap = new HashMap<>();
+//        Map<String, Object> userMap = new HashMap<>();
 //        userMap.put("uid", user.getUid());
-        userMap.put("recipes", Arrays.asList(sample));
-        db.collection("users").document(uid).set(userMap)
+//        userMap.put("recipes", Arrays.asList(sample));
+//        db.collection("users").document(uid).set(userMap)
+//                .addOnSuccessListener(aVoid -> {
+//                    Log.d("FIRESTORE", "Document Successfully Written");
+//                })
+//                .addOnFailureListener(e -> {
+//                    Log.d("FIRESTORE", "Error writing document ", e);
+//                });
+        Map<String, Object> user = new HashMap<>();
+        db.collection("users").document(uid).set(user)
                 .addOnSuccessListener(aVoid -> {
-                    Log.d("FIRESTORE", "Document Successfully Written");
+                    System.out.println("Document snapshot written!");
                 })
                 .addOnFailureListener(e -> {
-                    Log.d("FIRESTORE", "Error writing document ", e);
+                    System.out.println("Document writing failed!");
                 });
-
     }
 
 

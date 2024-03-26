@@ -31,6 +31,7 @@ public class RegisterActivity extends AppCompatActivity {
     public void registerUser(){
         String registerEmail = email.getText().toString();
         String registerPassword = password.getText().toString();
+        String userFullName = name.getText().toString();
         System.out.println(registerEmail);
         System.out.println(registerPassword);
         mAuth.createUserWithEmailAndPassword(registerEmail, registerPassword).addOnCompleteListener(this, task -> {
@@ -41,7 +42,7 @@ public class RegisterActivity extends AppCompatActivity {
                 Intent appIntent = new Intent(this, AppActivity.class);
                 assert user != null;
                 appIntent.putExtra("userIdIntent", user.getUid());
-                appIntent.putExtra("userNameIntent", name.getText().toString());
+                FirestoreHelper.insertNewUser(user.getUid(), userFullName);
                 startActivity(appIntent);
             } else {
                 Log.w("AUTH", "createUserWithEmail:failure", task.getException());
