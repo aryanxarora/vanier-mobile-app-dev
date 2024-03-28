@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "582905662962",
+    "project_id": "courseproject-f3bd9",
+    "storage_bucket": "courseproject-f3bd9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:582905662962:android:af311a0f71138f50992f6b",
+        "android_client_info": {
+          "package_name": "ca.vanier.courseproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3kYxjm8y0DUg4Xs4AAheoSsO6iDxC7gM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
